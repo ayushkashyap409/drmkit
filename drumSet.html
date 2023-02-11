@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>My Drum Set</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+<style>
+    .drums {
+        display: flex;
+        height: 200px;
+        width: 80px;
+        /* border: 3px solid black; */
+        margin-top: 150px;
+        margin-left: 30px;
+    }
+
+     .heading {
+        margin-left: 600px;
+        text-decoration: underline;
+        text-decoration-color: red;
+        font-size: 30px;
+     }
+
+     .keys {
+        display: flex;
+     }
+
+     .one {
+        margin-left:70px ;
+        text-decoration: underline;
+        font-size: 40px;
+     }
+
+     .two  {
+        margin-left: 120px;
+        text-decoration: underline;
+        font-size: 40px;
+     }
+     .three {
+        margin-left: 180px;
+        text-decoration: underline;
+        font-size: 40px;
+     }
+      .four {
+        margin-left: 190px;
+        text-decoration: underline;
+        font-size: 40px;
+      }
+      .five {
+        margin-left: 210px;
+        text-decoration: underline;
+        font-size: 40px;
+      }
+      .six {
+        margin-left: 160px;
+        text-decoration: underline;
+        font-size: 40px;
+      }
+      .seven {
+        margin-left: 150px;
+        text-decoration: underline;
+        font-size: 40px;
+      }
+      .eight {
+        margin-left: 180px;
+        text-decoration: underline;
+        font-size: 40px;
+      }
+    
+      .nine {
+        margin-left: 130px;
+        text-decoration: underline;
+        font-size: 40px;
+        /* font-size: larger; */
+    }
+</style>
+
+</head>
+<body>
+    <div class="heading"> <h1> Ayush's Drum Set </h1></div>
+
+
+    <div class="drums">
+        <!-- <h1> Ayush's Drum set.</h1> -->
+         <img src="/instuments/crash.png" alt=" Crash">
+         <img src="/instuments/tom1.png" alt=" Tom1 ">
+         <img src="/instuments/tom3.png" alt=" Tom3 ">
+         <img src="/instuments/snare.jpg" alt=" Snare ">
+         <img src="/instuments/snare.png" alt=" Snare">
+         <img src="/instuments/kick.png" alt=" Kick ">
+         <img src="/instuments/tom4.png" alt=" Tom4 ">
+         <img src="/instuments/tom2.png" alt=" Tom2 ">
+         <img src="/instuments/crash.png" alt=" Crash">
+    </div>
+  
+
+    <div class="keys">
+        <h3 class="one"> a </h3>
+        <h3 class="two"> s </h3>
+        <h3 class="three"> d </h3>
+        <h3 class="four"> f </h3>
+        <h3 class="five"> g </h3>
+        <h3 class="six"> h </h3>
+        <h3 class="seven"> j </h3>
+        <h3 class="eight"> k </h3>
+        <h3 class="nine"> l </h3>
+    </div>
+
+    <script>
+        document.onkeydown = function (e) {
+            if(e.key === "a" || e.key === "l") {
+                var audio = new Audio("/drumsounds/sounds_crash.mp3")
+                audio.play();
+            }
+            if(e.key === "s") {
+                var audio = new Audio("/drumsounds/sounds_tom-1.mp3")
+                audio.play();
+            }
+            if(e.key === "d") {
+                var audio = new Audio("/drumsounds/sounds_tom-3.mp3")
+                audio.play();
+            }
+            if(e.key === "f") {
+                var audio = new Audio("/drumsounds/sounds_snare.mp3")
+                audio.play();
+            }
+            if(e.key === "g") {
+                var audio = new Audio("/drumsounds/Snare.mp3")
+                audio.play();
+            }
+            if(e.key === "h") {
+                var audio = new Audio("/drumsounds/sounds_kick-bass.mp3")
+                audio.play();
+            }
+            if(e.key === "j") {
+                var audio = new Audio("/drumsounds/sounds_tom-4.mp3")
+                audio.play();
+            }
+            if(e.key === "k") {
+                var audio = new Audio("/drumsounds/sounds_tom-2.mp3")
+                audio.play();
+            }
+        }
+    </script>
+    
+</body>
+</html>
